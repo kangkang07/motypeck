@@ -1,20 +1,32 @@
 {
-  "name": "ts-mock",
-  "version": "0.1.0",
-  "private": true,
+  "name": "motypeck",
+  "description": "use type definition in typescript to mock data",
+  "version": "0.0.5",
+  "private": false,
+  "main": "dist/index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "webpack",
+    "t": "tsc src/main.ts && node src/main.js"
   },
   "dependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/mockjs": "^1.0.2",
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "jest": "^24.9.0",
+    "mockjs": "^1.0.1-beta3",
+    "ts-jest": "^24.0.2",
+    "ts-morph": "^3.1.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0",
-    "@vue/cli-plugin-typescript": "^3.0.0",
-    "@vue/cli-service": "^3.0.0",
+    "@babel/preset-env": "^7.6.0",
+    "@types/node": "^12.7.4",
+    "@types/webpack-env": "^1.14.0",
+    "babel-loader": "^8.0.6",
+    "ts-loader": "^6.0.4",
     "typescript": "^3.4.3",
-    "vue-template-compiler": "^2.6.10"
-  }
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "author": "qk",
+  "license": "ISC"
 }
