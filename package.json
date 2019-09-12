@@ -1,7 +1,7 @@
 {
   "name": "motypeck",
   "description": "use type definition in typescript to mock data",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "main": "dist/index.js",
   "scripts": {
@@ -28,5 +28,11 @@
     "webpack-cli": "^3.3.8"
   },
   "author": "qk",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": { "type" : "git"
+  , "url" : "https://github.com/kangkang07/motypeck"
+  },
+  "bugs": {
+    "url": "https://github.com/kangkang07/motypeck/issues"
+  },
 }
